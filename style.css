@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.font-1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-2 {
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(0deg, #111111 0%, #111111 17%, #000000 100%);
+    color: white;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    /* border: 2PX solid red; */
+}
+
+.text-color-1 {
+    color: rgba(255, 255, 255, .100);
+}
+
+.text-color-2 {
+    color: rgba(239, 237, 232, .65);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.primary-btn,
+.download-btn {
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-right: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #E6533C;
+}
+
+.download-btn {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.section-title {
+    line-height: 4rem;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* nav style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+}
+
+nav>ul {
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid #333; */
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.nav-link {
+    list-style: none;
+
+}
+
+.brand {
+    font-size: 1.8rem;
+    color: #E6533C;
+}
+
+.home {
+    background-color: #E6533C;
+}
+
+.nav-link {
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.menubars {
+    display: none;
+}
+
+.menubars i {
+    color: bisque;
+}
+
+/* banner style */
+.section-title {
+    font-size: 4rem;
+}
+
+.shape {
+    font-size: 5rem;
+}
+
+.banner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.banner-image {
+    padding-left: 3rem;
+    height: 600px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.free-video-container,
+.video-tutorial-container {
+    border: 1px solid;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    position: absolute;
+}
+
+.free-video-container {
+    top: 250px;
+    right: 60px;
+}
+
+.video-tutorial-container {
+    bottom: 110px;
+    left: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.red-dot {
+    background-color: #E6533C;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* your habit related style */
+.title {
+    font-size: 2.5rem;
+}
+
+.habit-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.items {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.items img {
+    width: 11rem;
+    height: 11rem;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+/* extra mile related style */
+.extra-mile-container {
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 2rem;
+}
+
+.run-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.run-btn {
+    margin-top: 16px;
+}
+
+.run img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+/* calculator related style */
+.bmi-details {
+    margin: 3rem auto;
+    padding: 1.2rem;
+    max-width: 550px;
+}
+
+.bmi-container {
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    padding: 1rem;
+}
+
+.bmi-box {
+    padding: 1.5rem;
+}
+
+.bmi-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmi-table table {
+    border-collapse: collapse;
+    margin-top: 1.7rem;
+}
+
+.bmi-table td,
+th {
+    border: 1px solid gray;
+    padding: 1rem;
+}
+
+.bmi-area-2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmi-area-2 .bmi-calculation-area {
+    background-color: #333333;
+    padding: 2.4rem;
+    border-radius: 10px;
+    max-width: 550px;
+    text-align: center;
+}
+
+.bmi-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.8rem;
+}
+
+.bmi-calculation-area p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.bmi-form input,
+.bmi-form select {
+    width: 100%;
+    padding: 1rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.bmi-form input::placeholder {
+    color: #aaa;
+}
+
+.box {
+    grid-column: span 2;
+}
+
+/* team related style */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+    border-radius: 1.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    margin-top: 50px;
+}
+
+.team-member {
+    border-radius: 1.8rem;
+    overflow: hidden;
+    position: relative;
+    filter: brightness(85%);
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+}
+
+.trainer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.position {
+    font-size: .8rem;
+}
+
+/* footer related style */
+footer {
+    margin-top: 50px;
+    padding: 5rem 5rem 2rem 5rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 50px;
+}
+
+.get-started-container {
+    line-height: 1.8rem;
+}
+
+.get-started-container h3,
+.footer-container h1 {
+    margin-bottom: 20px;
+}
+
+.get-started-container a {
+    text-decoration: none;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+/* .................................................. */
+
+/* responsive design for smaller device */
+
+@media screen and (max-width:576px) {
+
+    nav {
+        padding: 0 5px;
+    }
+
+    .brand {
+        font-size: 1.4rem;
+    }
+
+    .menubars {
+        display: block;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    .section-title,
+    .shape {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    .banner-content {
+        justify-content: center;
+    }
+
+    .free-video-container,
+    .video-tutorial-container {
+        padding: 10px;
+    }
+
+    .free-video-container {
+        top: 400px;
+        right: 20px;
+    }
+
+    .video-tutorial-container {
+        bottom: -145px;
+        left: 18px;
+    }
+
+    .items {
+        margin-bottom: 1rem;
+    }
+
+    .extra-mile-container,
+    .team-container {
+        height: auto;
+        margin: 1rem;
+    }
+
+    .run-btn button {
+        width: 100%;
+
+    }
+
+    footer {
+        padding: 2rem;
+
+    }
+
+    footer .brand {
+        font-size: 3rem;
+    }
+
+    .banner-container,
+    .extra-mile-container,
+    .habit-container,
+    .team-container,
+    .footer-container,
+    .bmi-container,
+    .bmi-form {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-rights {
+        text-align: start;
+    }
+
+}
